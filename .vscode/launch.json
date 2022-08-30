@@ -1,0 +1,97 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "name": "Run Learning Project",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-learning-project",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/code/LearnOptionPattern/bin/Debug/net6.0/LearnOptionPattern.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/code/LearnOptionPattern",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "name": "Run External Service One",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-external-service-one",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/code/ExternalServiceOne/bin/Debug/net6.0/ExternalServiceOne.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/code/ExternalServiceOne",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            // "serverReadyAction": {
+            //     "action": "openExternally",
+            //     "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            // },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "name": "Run External Service Two",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-external-service-two",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/code/ExternalServiceTwo/bin/Debug/net6.0/ExternalServiceTwo.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/code/ExternalServiceTwo",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ],
+    "compounds": [
+      {
+        "name": "ALL",
+        "configurations": ["Run Learning Project", "Run External Service One", "Run External Service Two"],
+        "stopAll": true
+      },
+      {
+        "name": "CLIENT-FOURNISSEUR",
+        "configurations": ["Run Learning Project", "Run External Service One"],
+        "stopAll": true
+      }
+    ]
+}

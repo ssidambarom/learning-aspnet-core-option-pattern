@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "code", "code", "{286CA0A8-C1E1-4739-8E96-3F3B418D66B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalServiceOne", "code\ExternalServiceOne\ExternalServiceOne.csproj", "{0EB59DC6-C346-4449-A655-43E91B9A2A37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnOptionPattern", "code\LearnOptionPattern\LearnOptionPattern.csproj", "{43916256-23A3-4275-BF2F-2F0E3C372F26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EB59DC6-C346-4449-A655-43E91B9A2A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB59DC6-C346-4449-A655-43E91B9A2A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB59DC6-C346-4449-A655-43E91B9A2A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB59DC6-C346-4449-A655-43E91B9A2A37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43916256-23A3-4275-BF2F-2F0E3C372F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43916256-23A3-4275-BF2F-2F0E3C372F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43916256-23A3-4275-BF2F-2F0E3C372F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43916256-23A3-4275-BF2F-2F0E3C372F26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0EB59DC6-C346-4449-A655-43E91B9A2A37} = {286CA0A8-C1E1-4739-8E96-3F3B418D66B8}
+		{43916256-23A3-4275-BF2F-2F0E3C372F26} = {286CA0A8-C1E1-4739-8E96-3F3B418D66B8}
+	EndGlobalSection
+EndGlobal
